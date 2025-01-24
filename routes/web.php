@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CatController;
 use App\Http\Controllers\DogController;
 use App\Http\Controllers\HelloController;
 use App\Http\Controllers\HiController;
@@ -16,3 +17,5 @@ Route::get('/hi', [HiController::class, 'index']);
 Route::get('/hi/zayin', [HiController::class, 'zayin']);
 
 Route::get('/dog', [DogController::class, 'index']);
+
+Route::get('/cat', [CatController::class, 'index']);
